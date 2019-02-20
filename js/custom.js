@@ -178,7 +178,7 @@ $(document).ready(function(){
 	
 	//Check to see if the window is top if not then display button
 	$(window).scroll(function(){
-		if ($(this).scrollTop() > 800) {
+		if ($(this).scrollTop() > 0) {
 			$('.scrollToTop').fadeIn();
 		} else {
 			$('.scrollToTop').fadeOut();
@@ -187,7 +187,7 @@ $(document).ready(function(){
 	
 	//Click event to scroll to top
 	$('.scrollToTop').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
+		$('html, body').animate({scrollTop : 5630},0);
 		return false;
 	});
 	
