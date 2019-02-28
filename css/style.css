@@ -409,6 +409,11 @@ h2.slide-btm-text{
     font-size: 13px;
     text-align: center;
 }
+
+hr {
+    width: 60%;
+}
+
 /*team*/
 .team-col{
     text-align: center;
@@ -444,8 +449,11 @@ h2.slide-btm-text{
 }
 /**testimonials**/
 .testimonials{
-    background:url(../img/showcase-3.jpg);
-    padding: 80px 0;
+    text-align: center;
+    border: 1px solid lightgray;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 20px;
 }
 .bg-heading .center-heading h2{
     color:#333;
@@ -461,14 +469,26 @@ h2.slide-btm-text{
     border-color: #67913F;
 }
 #testi-carousel h4{
-    color:#fff;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     line-height: 30px;
 }
-#testi-carousel p{
+
+#testi-carousel-1 h4{
+    color:#406225;
+}
+
+#testi-carousel-2 h4{
     color:#67913F;
+}
+
+#testi-carousel-3 h4{
+    color:#9EBB2D;
+}
+
+#testi-carousel p{
+    color:#333;
 }
 /**cta**/
 .cta{
@@ -522,7 +542,7 @@ h2.slide-btm-text{
     color:#fff;
     border-radius: 35px;
     -webkit-border-radius: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 30px;
     background-repeat: no-repeat;
 }
@@ -571,6 +591,7 @@ h2.slide-btm-text{
     font-size: 24px;
     font-weight: 400;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .service-info-1 h4{
