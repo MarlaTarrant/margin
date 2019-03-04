@@ -187,11 +187,10 @@ $(document).ready(function(){
 	
 	//Click event to scroll to top
 	$('.scrollToTop').click(function(){
-		$('html, body').animate({scrollTop : 5630},0);
+		$('html, body').animate({scrollTop : 6885},0);
 		return false;
 	});
 	
 });
-
 
 	

@@ -340,11 +340,11 @@ h2.slide-btm-text{
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
-
 }
 /**services****/
 .services{
     margin-top: 30px;
+    text-align: center;
 }
 .service-box{
     text-align: center;
@@ -450,7 +450,6 @@ hr {
 /**testimonials**/
 .testimonials{
     text-align: center;
-    border: 1px solid lightgray;
     margin-right: -15px;
     margin-left: -15px;
     padding-top: 20px;
@@ -468,6 +467,7 @@ hr {
 .bg-heading .center-heading .icon:after {
     border-color: #67913F;
 }
+
 #testi-carousel h4{
     font-weight: 300;
     font-family: 'Lato', sans-serif;
@@ -477,6 +477,7 @@ hr {
 
 #testi-carousel-1 h4{
     color:#406225;
+
 }
 
 #testi-carousel-2 h4{
@@ -489,6 +490,8 @@ hr {
 
 #testi-carousel p{
     color:#333;
+    padding-left:15%;
+    padding-right:15%;
 }
 /**cta**/
 .cta{
