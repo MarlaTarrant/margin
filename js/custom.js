@@ -186,11 +186,8 @@ $(document).ready(function(){
 	});
 	
 	//Click event to scroll to top
-	$('.scrollToTop').click(function(){
-		$('html, body').animate({scrollTop : 6885},0);
-		return false;
+	$('.scrollToTop').click(function(){ return false;
+		$('html, body').animate({scrollTop : 800},0);
 	});
 	
 });
-
-	
