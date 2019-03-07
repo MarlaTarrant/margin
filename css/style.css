@@ -19,6 +19,8 @@ body {
     line-height: 24px;
     background-color: #fff;
     overflow-x: hidden;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /*
@@ -914,10 +916,10 @@ input[type="color"]:focus,
     color: #fff;
     font-size: 15px;
     font-weight: 700;
-    padding: 0 0 10px 0;
-    margin-bottom: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
+
 .widget-title:first-letter{
     border-bottom: 3px solid #67913F;
 }
