@@ -1,38 +1,21 @@
 <?php
 
-$errorMSG = "";
+    if (isset($_POST['submit'])) {
 
-//Add your email here
-$EmailTo = "info@margineco.com";
-$Subject = "New Message Received";
+        var_dump($_POST);
 
-// prepare email body text
-$Body = "";
-$Body .= "Name: ";
-$Body .= $name;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $email;
-$Body .= "\n";
-$Body .= "Subject: ";
-$Body .= $msg_subject;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $message;
-$Body .= "\n";
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $message = $_POST['message'];
 
-// send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+        $mailTo = "info@margineco.com";
+        $subject = 'New message';
+        $headers = "From: ".$email;
+        $txt = "You have received an email from".$name;".\n\n".$message;
 
-// redirect to success page
-if ($success && $errorMSG == ""){
-   echo "success";
-}else{
-    if($errorMSG == ""){
-        echo "Something went wrong :(";
-    } else {
-        echo $errorMSG;
+        mail($mailTo, $phone, $txt, $headers, $subject);
+        header("Location: index.html?mailsend");
     }
-}
 
 ?>
