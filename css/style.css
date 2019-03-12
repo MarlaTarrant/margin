@@ -863,7 +863,7 @@ input[type="number"],
 input[type="email"],
 input[type="url"],
 input[type="search"],
-input[type="tel"],
+input[type="text"],
 input[type="color"],
 .form-control{
     -webkit-border-radius: 1px;
@@ -894,7 +894,7 @@ input[type="number"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
 input[type="search"]:focus,
-input[type="tel"]:focus,
+input[type="text"]:focus,
 input[type="color"]:focus,
 .form-control:focus{
     border-color: #bbb;
@@ -902,7 +902,6 @@ input[type="color"]:focus,
     box-shadow: 0 2px 5px rgba(0,0,0,0.1) inset;
     -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.1) inset;
 }
-
 
 /*********footer************/
 #footer {

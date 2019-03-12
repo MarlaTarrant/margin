@@ -246,7 +246,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 margin-btm-30 text-center">
                         <p class="lead wow animated fadeInUp"  data-wow-duration="700ms" data-wow-delay="200ms">
-                            you decide your price, choose a plan from the options.Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                            You decide your price, choose a plan from the options.
                         </p>
                     </div>
                 </div>
@@ -260,12 +260,14 @@
                             <div class="plan-price">
                                 <h2><span style="font-size: 15px">*FROM</span>$ 1,250</h2>
                             </div><!--plan price-->
+                            <!-- pricing table 
                             <ul class="plan-features list-unstyled">
                                 <li><i class="fa fa-check"></i> 5 Team Members</li>
                                 <li><i class="fa fa-check"></i> 10 MySql database</li>
                                 <li><i class="fa fa-check"></i> 100 GB Bandwith</li>
                                 <li><i class="fa fa-check"></i> 10 GB Storage</li>
-                            </ul><!--features-->
+                            </ul><!--features--
+                            pricing table end --> 
                             <div class="plan-link">
                                 <a href="#contact" class="btn btn-dark btn-lg">Choose Plan</a>
                             </div><!--plan link-->
@@ -279,12 +281,14 @@
                             <div class="plan-price">
                                 <h2><span style="font-size: 15px">*FROM</span>$ 1,650</h2>
                             </div><!--plan price-->
+                            <!-- pricing table 
                             <ul class="plan-features list-unstyled">
                                 <li><i class="fa fa-check"></i> 25 Team Members</li>
                                 <li><i class="fa fa-check"></i> 50 MySql database</li>
                                 <li><i class="fa fa-check"></i> 500 GB Bandwith</li>
                                 <li><i class="fa fa-check"></i> 50 GB Storage</li>
-                            </ul><!--features-->
+                            </ul><!--features--
+                            pricing table end -->
                             <div class="plan-link">
                                 <a href="#contact" class="btn btn-theme btn-lg">Choose Plan</a>
                             </div><!--plan link-->
@@ -298,12 +302,14 @@
                             <div class="plan-price">
                                 <h2><span style="font-size: 15px">*FROM</span>$ 1,950</h2>
                             </div><!--plan price-->
+                            <!-- pricing table 
                             <ul class="plan-features list-unstyled">
                                 <li><i class="fa fa-check"></i> Unlimited Team Members</li>
                                 <li><i class="fa fa-check"></i> Unlimited MySql database</li>
                                 <li><i class="fa fa-check"></i> 50 Tb Bandwith</li>
                                 <li><i class="fa fa-check"></i> Unlimited GB Storage</li>
-                            </ul><!--features-->
+                            </ul><!--features--
+                            pricing table end -->
                             <div class="plan-link">
                                 <a href="#contact" class="btn btn-dark btn-lg">Choose Plan</a>
                             </div><!--plan link-->
@@ -753,9 +759,16 @@
                                 </div>
                             </div>
                             <div class="row control-group">
-                                <div class="form-group col-xs-12  controls">
+                                <div class="form-group col-xs-12 controls">
                                     <label>Plan Option<span>*</span></label>
-                                    <input type="tel" class="form-control" placeholder="Plan Option" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <div class="dropdown">
+                                    <select type="text" class="form-control" placeholder="Plan Option" id="plan" required data-validation-required-message="Please choose a option from the dropdown menu.">
+                                        <option value="1" selected>General Inquiry</option>
+                                        <option value="2">Market Intelligence</option>
+                                        <option value="3">Economic Analysis</option>
+                                        <option value="4">Industry Forecasts</option>
+                                    </select>
+                                    </div>
                                     <p class="help-block"></p>
                                 </div>
                             </div>

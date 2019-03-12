@@ -6,15 +6,15 @@
 
         $name = $_POST['name'];
         $email = $_POST['email'];
-        $phone = $_POST['phone'];
+        $plan = $_POST['plan'];
         $message = $_POST['message'];
 
         $mailTo = "info@margineco.com";
         $subject = 'New message';
         $headers = "From: ".$email;
-        $txt = "You have received an email from".$name;".\n\n".$message;
+        $txt = "You have received an email from" .$name;".\n\n".$message;
 
-        mail($mailTo, $phone, $txt, $headers, $subject);
+        mail($mailTo, $plan, $txt, $headers, $subject);
         header("Location: index.html?mailsend");
     }
 
