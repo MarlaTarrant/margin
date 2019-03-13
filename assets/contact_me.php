@@ -12,10 +12,9 @@
         $mailTo = "info@margineco.com";
         $subject = 'New message';
         $headers = "From: ".$email;
-        $txt = "You have received an email from" .$name;".\n\n".$message;
+        $txt = "You have received an email from ".$name;".\n\n".$message;
 
         mail($mailTo, $plan, $txt, $headers, $subject);
         header("Location: index.html?mailsend");
     }
-
 ?>

@@ -269,7 +269,7 @@
                             </ul><!--features--
                             pricing table end --> 
                             <div class="plan-link">
-                                <a href="#contact" class="btn btn-dark btn-lg">Choose Plan</a>
+                                <a href="#contact" class="btn btn-dark btn-lg" class="">Choose Plan</a>
                             </div><!--plan link-->
                         </div><!--plan wrap-->
                     </div><!--plan col-->
@@ -367,7 +367,9 @@
                             </div>
                         </div><!--testimonials item like paragraph-->
                         <div>
-
+                            <div class="col-md-6">
+                                <img src="img/work-2.png" class="img-responsive" alt="">
+                            </div>
                             <div class="col-md-6 margin-btm-30">
                                 <div class="work-detail">
                                     <h1>Work Title</h1>
@@ -384,9 +386,6 @@
                                     <p><strong>Skills:</strong> HTMl5 / CSS3 / Bootstrap3</p>
                                     <p><a href="blog-post.html" class="btn btn-dark">Visit Project</a></p>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="img/work-2.png" class="img-responsive" alt="">
                             </div>
                         </div><!--testimonials item like paragraph-->
                         <div>
@@ -763,10 +762,11 @@
                                     <label>Plan Option<span>*</span></label>
                                     <div class="dropdown">
                                     <select type="text" class="form-control" placeholder="Plan Option" id="plan" required data-validation-required-message="Please choose a option from the dropdown menu.">
-                                        <option value="1" selected>General Inquiry</option>
-                                        <option value="2">Market Intelligence</option>
-                                        <option value="3">Economic Analysis</option>
-                                        <option value="4">Industry Forecasts</option>
+                                        <option value="0" selected >Please select...</option>
+                                        <option value="option1">General Inquiry</option>
+                                        <option value="option2">Market Intelligence</option>
+                                        <option value="option3">Economic Analysis</option>
+                                        <option value="option4">Industry Forecasts</option>
                                     </select>
                                     </div>
                                     <p class="help-block"></p>
@@ -978,6 +978,102 @@
             $(function(){
 
             $('.scrollToTop').click(function() {
+
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            && location.hostname == this.hostname) {
+
+            var $target = $(this.hash);
+
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+            if ($target.length) {
+
+            var targetOffset = $target.offset().top;
+
+            $('html,body').animate({scrollTop: targetOffset}, 800);
+
+            return false;
+
+            }
+            }
+            });
+            });
+
+            $(function(){
+
+            $('a[href*=#contact]').click(function() {
+
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            && location.hostname == this.hostname) {
+
+            var $target = $(this.hash);
+
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+            if ($target.length) {
+
+            var targetOffset = $target.offset().top;
+
+            $('html,body').animate({scrollTop: targetOffset}, 800);
+
+            return false;
+
+            }
+            }
+            });
+            });
+
+            $(function(){
+
+            $('a[href*=#services]').click(function() {
+
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            && location.hostname == this.hostname) {
+
+            var $target = $(this.hash);
+
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+            if ($target.length) {
+
+            var targetOffset = $target.offset().top;
+
+            $('html,body').animate({scrollTop: targetOffset}, 800);
+
+            return false;
+
+            }
+            }
+            });
+            });
+
+            $(function(){
+
+            $('a[href*=#articles]').click(function() {
+
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            && location.hostname == this.hostname) {
+
+            var $target = $(this.hash);
+
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+            if ($target.length) {
+
+            var targetOffset = $target.offset().top;
+
+            $('html,body').animate({scrollTop: targetOffset}, 800);
+
+            return false;
+
+            }
+            }
+            });
+            });
+
+            $(function(){
+
+            $('a[href*=#about]').click(function() {
 
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
             && location.hostname == this.hostname) {
