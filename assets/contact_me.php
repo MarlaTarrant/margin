@@ -3,18 +3,19 @@
     if (isset($_POST['submit'])) {
 
         var_dump($_POST);
-
+        
         $name = $_POST['name'];
         $email = $_POST['email'];
-        $plan = $_POST['plan'];
+        $radio = $_POST['radio'];
         $message = $_POST['message'];
 
         $mailTo = "info@margineco.com";
-        $subject = 'New message';
+        $subject = "New message from ".$name;
         $headers = "From: ".$email;
-        $txt = "You have received an email from ".$name;".\n\n".$message;
+        $txt = "You have received an email from ".$name." with regards to ".$radio.".\n\n".$message;
 
-        mail($mailTo, $plan, $txt, $headers, $subject);
+        mail($mailTo, $subject, $txt, $headers);
         header("Location: index.html?mailsend");
     }
 ?>
+
