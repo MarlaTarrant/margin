@@ -882,10 +882,6 @@ input[type="color"],
     transition: all 200ms ease-in;
 }
 
-option {
-    
-}
-
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,

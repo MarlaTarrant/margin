@@ -999,100 +999,84 @@
             });
             });
 
-            $(function(){
+            $(document).on('click', 'a[href^="#contact"]', function(e) {
+            // target element id
+            var id = $(this).attr('href');
 
-            $('a[href*=#contact]').click(function() {
-
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-            && location.hostname == this.hostname) {
-
-            var $target = $(this.hash);
-
-            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-
-            if ($target.length) {
-
-            var targetOffset = $target.offset().top;
-
-            $('html,body').animate({scrollTop: targetOffset}, 800);
-
-            return false;
-
+            // target element
+            var $id = $(id);
+            if ($id.length === 0) {
+            return;
             }
-            }
-            });
+
+            // prevent standard hash navigation (avoid blinking in IE)
+            e.preventDefault();
+
+            // top position relative to the document
+            var pos = $id.offset().top - 50;
+
+            // animated top scrolling
+            $('body, html').animate({scrollTop: pos});
             });
 
-            $(function(){
+            $(document).on('click', 'a[href^="#services"]', function(e) {
+            // target element id
+            var id = $(this).attr('href');
 
-            $('a[href*=#services]').click(function() {
-
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-            && location.hostname == this.hostname) {
-
-            var $target = $(this.hash);
-
-            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-
-            if ($target.length) {
-
-            var targetOffset = $target.offset().top;
-
-            $('html,body').animate({scrollTop: targetOffset}, 800);
-
-            return false;
-
+            // target element
+            var $id = $(id);
+            if ($id.length === 0) {
+            return;
             }
-            }
-            });
+
+            // prevent standard hash navigation (avoid blinking in IE)
+            e.preventDefault();
+
+            // top position relative to the document
+            var pos = $id.offset().top - 50;
+
+            // animated top scrolling
+            $('body, html').animate({scrollTop: pos});
             });
 
-            $(function(){
+            $(document).on('click', 'a[href^="#articles"]', function(e) {
+            // target element id
+            var id = $(this).attr('href');
 
-            $('a[href*=#articles]').click(function() {
-
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-            && location.hostname == this.hostname) {
-
-            var $target = $(this.hash);
-
-            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-
-            if ($target.length) {
-
-            var targetOffset = $target.offset().top;
-
-            $('html,body').animate({scrollTop: targetOffset}, 800);
-
-            return false;
-
+            // target element
+            var $id = $(id);
+            if ($id.length === 0) {
+            return;
             }
-            }
-            });
+
+            // prevent standard hash navigation (avoid blinking in IE)
+            e.preventDefault();
+
+            // top position relative to the document
+            var pos = $id.offset().top - 50;
+
+            // animated top scrolling
+            $('body, html').animate({scrollTop: pos});
             });
 
-            $(function(){
+            $(document).on('click', 'a[href^="#about"]', function(e) {
+            // target element id
+            var id = $(this).attr('href');
 
-            $('a[href*=#about]').click(function() {
-
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-            && location.hostname == this.hostname) {
-
-            var $target = $(this.hash);
-
-            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-
-            if ($target.length) {
-
-            var targetOffset = $target.offset().top;
-
-            $('html,body').animate({scrollTop: targetOffset}, 800);
-
-            return false;
-
+            // target element
+            var $id = $(id);
+            if ($id.length === 0) {
+            return;
             }
-            }
-            });
+
+            // prevent standard hash navigation (avoid blinking in IE)
+            e.preventDefault();
+
+            // top position relative to the document
+            var pos = $id.offset().top - 50;
+
+            // animated top scrolling
+            $('body, html').animate({scrollTop: pos});
             });
 
         </script>

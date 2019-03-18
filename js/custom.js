@@ -188,6 +188,6 @@ $(document).ready(function(){
 	//Click event to scroll to top
 	$('.scrollToTop').click(function(){ return false;
 		$('html, body').animate({scrollTop : 800},0);
-	});
-	
+    });
+    
 });
