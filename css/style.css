@@ -92,6 +92,7 @@ label{
     background:#67913F; /* Firefox */
     color: #fff;
 }
+
 /**********bootstrap navigation overrides***********/
 .navbar-default {
     background-color: rgba(255,255,255,0.9);  
