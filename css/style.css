@@ -95,6 +95,11 @@ label{
 .margin-btm-30{
     margin-bottom: 30px;
 }
+
+.margin-btm-20{
+    margin-bottom: 20px;
+}
+
 ::selection {
     background:#67913F; /* Safari */
     color: #fff;
@@ -509,16 +514,16 @@ hr {
 }
 /**cta**/
 .cta{
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 20px;
     background-color: #f4f5f2;
     color:#666;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 @media(min-width:768px){
     .cta a{
-        float: right;
+        float: center;
     }
 }
 .cta h3{
