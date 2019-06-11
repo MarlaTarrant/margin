@@ -363,22 +363,22 @@ h2.slide-btm-text{
 /**services****/
 .services{
     margin-top: 30px;
-    text-align: center;
 }
 .service-box{
-    text-align: center;
+    text-align: left;
 }
 .service-box i{
-    width:90px;
-    height: 90px;
-    line-height: 90px;
+    vertical-align: middle;
+    float: left;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
     color:#999;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     background-color: #f5f4f2;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 25px;
     -webkit-transition: 0.7s ease-in-out;
     -moz-transition: 0.7s ease-in-out;
     -ms-transition: 0.7s ease-in-out;
@@ -423,10 +423,12 @@ h2.slide-btm-text{
     font-weight: 400;
     text-transform: uppercase;
     font-size: 18px;
+    text-align: left;
 }
 .service-box p{
+    margin-top: 10px;
     font-size: 13px;
-    text-align: center;
+    text-align: left;
 }
 
 hr {
@@ -536,6 +538,7 @@ hr {
     border-radius:0px;
     margin:0px;
   }
+
   .nav-tabs>li>a:hover {
       /* margin-right: 2px; */
       line-height: 1.42857143;
@@ -555,6 +558,10 @@ hr {
 .tab-icon {
     display: inline-block;
     margin-right: 10px;
+}
+
+.icon-spacing {
+    
 }
 
 /**cta**/
@@ -608,6 +615,8 @@ hr {
 /***our services****/
 
 .service-icon {
+    display: inline-block;
+    margin-right: 10px;
     text-align: center;
     width:100%;
     height: 70px;
@@ -790,6 +799,16 @@ hr {
     transform: scale(1.1); 
 }
 
+/***cards***/
+
+.cards {
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    -webkit-box-shadow: 10px 10px 10px -10px rgba(209,209,209,1);
+    -moz-box-shadow: 10px 10px 10px -10px rgba(209,209,209,1);
+    box-shadow: 10px 10px 10px -10px rgba(209,209,209,1);
+}
 
 /***pricing tables****/
 
