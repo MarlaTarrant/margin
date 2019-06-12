@@ -75,6 +75,7 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 0px;
     font-family: 'Poppins', sans-serif;
 }
+
 label{
     font-weight: 400;
 }
@@ -360,24 +361,62 @@ h2.slide-btm-text{
     background-size: cover;
     background-attachment: fixed;
 }
+
+/***sizing***/
+.text-justify-xs {
+    text-align: justify;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .text-justify-sm {
+        text-align: justify;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .text-justify-md {
+        text-align: justify;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .text-justify-lg {
+        text-align: justify;
+    }
+}
+
 /**services****/
 .services{
     margin-top: 30px;
+    align-content: center;
+    flex-wrap: wrap;
+  -webkit-align-content: center;
 }
+
 .service-box{
-    text-align: left;
+    float: left;
 }
+
+.service-box:hover {
+    background-color: #67913F;
+    color: white;
+}
+
 .service-box i{
+    margin-right: 15px;
     vertical-align: middle;
     float: left;
     width: 60px;
     height: 60px;
     line-height: 60px;
     text-align: center;
-    color:#999;
+    color:#fff;
     border-radius: 50%;
     -webkit-border-radius: 50%;
-    background-color: #f5f4f2;
+    background-color: #67913F;
     font-size: 25px;
     -webkit-transition: 0.7s ease-in-out;
     -moz-transition: 0.7s ease-in-out;
@@ -390,43 +429,19 @@ h2.slide-btm-text{
     -moz-transform: rotateY(360deg);
     -ms-transform: rotateY(360deg);
     -o-transform: rotateY(360deg);
-    color:#fff;
+    color:#67913F;
+    background-color: #fff;
 }
 
-.service-box-1:hover i{
-    -webkit-transform: rotateY(360deg);
-    -moz-transform: rotateY(360deg);
-    -ms-transform: rotateY(360deg);
-    -o-transform: rotateY(360deg);
-    background-color: #406225;
-    color:#fff;
-}
-
-.service-box-2:hover i{
-    -webkit-transform: rotateY(360deg);
-    -moz-transform: rotateY(360deg);
-    -ms-transform: rotateY(360deg);
-    -o-transform: rotateY(360deg);
-    background-color: #67913F;
-    color:#fff;
-}
-
-.service-box-3:hover i{
-    -webkit-transform: rotateY(360deg);
-    -moz-transform: rotateY(360deg);
-    -ms-transform: rotateY(360deg);
-    -o-transform: rotateY(360deg);
-    background-color: #9EBB2D;
-    color:#fff;
-}
 .service-box h3{
+    display: inline-block;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 18px;
-    text-align: left;
+    overflow: hidden;
 }
 .service-box p{
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 13px;
     text-align: left;
 }
@@ -560,10 +575,6 @@ hr {
     margin-right: 10px;
 }
 
-.icon-spacing {
-    
-}
-
 /**cta**/
 .cta{
     padding-top: 30px;
@@ -616,31 +627,6 @@ hr {
 
 .service-icon {
     display: inline-block;
-    margin-right: 10px;
-    text-align: center;
-    width:100%;
-    height: 70px;
-    line-height: 70px;
-    text-align: center;
-    color:#fff;
-    border-radius: 5px;
-    padding: 5px;
-    -webkit-border-radius: 5px;
-    margin-bottom: 30px;
-    font-size: 30px;
-    background-repeat: no-repeat;
-}
-
-.service-icon-1 i{
-    background-color: #406225;
-}
-
-.service-icon-2 i{
-    background-color: #67913F;
-}
-
-.service-icon-3 i{
-    background-color: #9EBB2D;
 }
 
 .service-info h4{
@@ -648,27 +634,6 @@ hr {
     font-weight: 400;
     text-align: center;
     margin-bottom: 30px;
-}
-
-.service-info-1 h4{
-    color:#406225;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-}
-
-.service-info-2 h4{
-    color:#67913F;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-}
-
-.service-info-3 h4{
-    color:#9EBB2D;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
 }
 
 .service-info p{
