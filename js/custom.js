@@ -26,6 +26,8 @@ $(window).load(function() {
     });
 });
 
+/* Auto select on page load */
+
 
 /* ==============================================
  Auto Close Responsive Navbar on Click

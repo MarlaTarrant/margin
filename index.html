@@ -178,23 +178,23 @@
                 <div class="row">
                     <div class="col-md-12">
                             <div class="tabbable-panel">
-                                    <div class="tabbable-line">
+                                    <div id="tabs" class="tabbable-line">
                                         <ul class="nav nav-tabs text-center">
                                             <li class="active">
-                                                <a href="#tab_default_1" data-toggle="tab">Discover</a>
+                                                <a href="#tabs-1" data-toggle="tab">Discover</a>
                                             </li>
                                             <li>
-                                                <a href="#tab_default_2" data-toggle="tab">Planning</a>
+                                                <a href="#tabs-2" data-toggle="tab">Planning</a>
                                             </li>
                                             <li>
-                                                <a href="#tab_default_3" data-toggle="tab">Marketing</a>
+                                                <a href="#tabs-3" data-toggle="tab">Marketing</a>
                                             </li>
                                             <li>
-                                                <a href="#tab_default_4" data-toggle="tab">Growth</a>
+                                                <a href="#tabs-4" data-toggle="tab">Growth</a>
                                             </li>
                                         </ul>
                                         <div class="tab-content">
-                                            <div class="tab-pane active focus" id="tab_default_1">
+                                            <div class="tab-pane active" id="tabs-1">
                                                 <div class="col-md-6 margin-btm-30">
                                                     <img src="img/process-1.jpg" class="img-responsive img-shadow" alt="">
                                                 </div>
@@ -212,7 +212,7 @@
                                                 </div>
                                             </div>
                                             
-                                            <div class="tab-pane" id="tab_default_2">
+                                            <div class="tab-pane" id="tabs-2">
                                                 <div class="col-md-6 margin-btm-30">
                                                     <img src="img/process-2.jpg" class="img-responsive img-shadow" alt="">
                                                 </div>
@@ -230,7 +230,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="tab-pane" id="tab_default_3">
+                                            <div class="tab-pane" id="tabs-3">
                                                 <div class="col-md-6 margin-btm-30">
                                                     <img src="img/process-3.jpg" class="img-responsive img-shadow" alt="">
                                                 </div>
@@ -248,7 +248,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="tab-pane" id="tab_default_4">
+                                            <div class="tab-pane" id="tabs-4">
                                                 <div class="col-md-6 margin-btm-30">
                                                     <img src="img/process-4.jpg" class="img-responsive img-shadow" alt="">
                                                 </div>
@@ -267,6 +267,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div id="tabid"></div>
                             </div>
                     </div>
                 </div>
@@ -973,6 +974,15 @@
         <!--customizable plugin edit according to your needs-->
         <script src="js/custom.js" type="text/javascript"></script>
 
+        <script>
+            $("#tabs").tabs({
+            active: 0,
+            activate: function (event, ui) {
+            var active = $('#tabs').tabs('option', 'active');
+            }
+            });
+        </script>
+        
         <script>
             $(function(){
 
