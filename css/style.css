@@ -589,6 +589,10 @@ hr {
 
 /**services new****/
 
+.bold {
+    font-weight: 1000;
+}
+
 .services-post {
     -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
@@ -1078,7 +1082,7 @@ hr {
     color: #fff;
     font-size: 25px;
     font-weight: 400;
-    padding-top: 19px;
+    padding-top: 10px;
 }
 
 .cta-btn {
@@ -1273,9 +1277,10 @@ hr {
 
 .price-title {
     padding: 20px 0;
-    background: #e8ebec;
+    background: #4e4e4e;
     text-align: center;
     border-bottom: 1px solid #EFEFEF;
+    color: white;
 }
 
 .price-title-dark {
@@ -1329,8 +1334,18 @@ hr {
     text-align: center;
 }
 
-.popular {
+.popular-1 {
+    background-color: #9ebb3b;
+    color: #fff;
+}
+
+.popular-2 {
     background-color: #67913F;
+    color: #fff;
+}
+
+.popular-3 {
+    background-color: #41632e;
     color: #fff;
 }
 
@@ -1484,6 +1499,18 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     font-weight: 550;
     text-align: left;
     margin-bottom: 30px;
+}
+
+@media(max-width:533px) {
+    .widget-title-contact {
+        padding-top: 30px;
+    }
+}
+
+@media(max-width:768px) {
+    .widget-title-contact {
+        padding-top: 30px;
+    }
 }
 
 .widget-title-logo {
