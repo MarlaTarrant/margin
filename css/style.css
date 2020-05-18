@@ -312,6 +312,22 @@ h2.slide-btm-text {
     background-color: #fff;
 }
 
+.btn-border-green {
+    border: 1px solid #67913F;
+    color: #67913F;
+}
+
+.btn-border-green:hover {
+    border: 1px solid #67913F;
+    background-color: #67913F;
+    color: #fff;
+}
+
+.btn-border-green:focus {
+    border: 1px solid #67913F;
+    color: #67913F;
+}
+
 .btn-dark {
     background-color: #333;
     color: #fff;
@@ -1094,6 +1110,18 @@ hr {
     /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, #406225, #9EBB2D);
     /* Standard syntax (must be last) */
+}
+
+.text-primary {
+    color: #67913F;
+}
+
+.spacing-top {
+    padding-top: 10px;
+}
+
+.spacing-btm {
+    padding-bottom: 10px;
 }
 
 /***our services****/
