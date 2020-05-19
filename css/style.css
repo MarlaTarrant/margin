@@ -888,11 +888,12 @@ hr {
         flex: 0 0 50%;
         max-width: 50%;
     }
+}
 
-    }
-    .ml-md-4, .mx-md-4 {
-        margin-left: 1.5rem!important;
-    }
+.ml-md-4, .mx-md-4 {
+    margin-left: 1.5rem!important;
+}
+
 }
 
 /* Medium devices (desktops, 992px and up) */
