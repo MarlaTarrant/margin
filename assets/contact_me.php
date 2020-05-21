@@ -19,3 +19,22 @@
     }
 ?>
 
+<?php
+
+//check if form was sent
+if($_POST){
+    
+	//honey pot field
+	$honeypot = $_POST['firstname'];
+
+	//check if the honeypot field is filled out. If not, send a mail.
+	if( ! empty( $honeypot ) ){
+		return; //you may add code here to echo an error etc.
+	}else{
+        mail( $mailTo, $subject, $txt, $headers );
+        header("Location: index.html?mailsend");
+	}
+}
+
+?>
+
