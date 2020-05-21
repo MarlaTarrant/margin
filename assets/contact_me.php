@@ -3,6 +3,9 @@
     if (isset($_POST['submit'])) {
 
         var_dump($_POST);
+
+        //honey pot field
+	    $honeypot = $_POST['firstname'];
         
         $name = $_POST['name'];
         $email = $_POST['email'];
@@ -14,27 +17,14 @@
         $headers = "From: ".$email;
         $txt = "You have received an email from ".$name." with regards to ".$radio.".\n\n".$message;
 
-        mail($mailTo, $subject, $txt, $headers);
-        header("Location: index.html?mailsend");
-    }
-?>
-
-<?php
-
-//check if form was sent
-if($_POST){
-    
-	//honey pot field
-	$honeypot = $_POST['firstname'];
-
-	//check if the honeypot field is filled out. If not, send a mail.
+        //check if the honeypot field is filled out. If not, send a mail.
 	if( ! empty( $honeypot ) ){
 		return; //you may add code here to echo an error etc.
 	}else{
-        mail( $mailTo, $subject, $txt, $headers );
-        header("Location: index.html?mailsend");
-	}
-}
 
+        mail($mailTo, $subject, $txt, $headers);
+        header("Location: index.html?mailsend");
+    }
+}
 ?>
 
