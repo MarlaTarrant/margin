@@ -527,9 +527,9 @@ h2.slide-btm-text {
 }
 
 @media screen and (min-width: 1200px)  {
-        .spacing-btm { display: none; }
+        .spacing-btm-2 { display: none; }
     }
-    
+
 /* Small devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
